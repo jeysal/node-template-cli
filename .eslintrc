@@ -13,6 +13,7 @@
   },
   "rules": {
     "comma-dangle": ["error", "always-multiline"],
+    "arrow-parens": ["error", "as-needed"],
     "prettier/prettier": ["error", {
       "singleQuote": true,
       "trailingComma": "all"
