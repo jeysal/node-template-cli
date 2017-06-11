@@ -14,6 +14,7 @@
   "rules": {
     "comma-dangle": ["error", "always-multiline"],
     "arrow-parens": ["error", "as-needed"],
+    "no-restricted-syntax": "off",
     "prettier/prettier": ["error", {
       "singleQuote": true,
       "trailingComma": "all"
