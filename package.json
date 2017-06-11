@@ -1,14 +1,16 @@
 {
   "private": true,
-  "name": "node-template",
+  "name": "node-template-cli",
   "version": "0.1.0",
-  "description": "Template for a node module",
+  "description": "Template for a node CLI module",
   "keywords": [
     "node",
     "npm",
     "template"
   ],
-  "main": "index.js",
+  "bin": {
+    "node-template-cli": "src/cli.js"
+  },
   "author": {
     "name": "Tim Seckinger",
     "email": "seckinger.tim@gmail.com",
@@ -16,27 +18,26 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jeysal/node-template"
+    "url": "https://github.com/jeysal/node-template-cli"
   },
   "license": "MIT",
   "scripts": {
-    "clean": "rimraf coverage dist",
+    "clean": "rimraf dist",
     "check": "run-p lint typecheck test",
     "lint": "eslint src test",
     "typecheck": "flow check",
-    "test": "jest --coverage",
-    "watchtest": "jest --coverage --watchAll",
-    "servecov": "live-server coverage/lcov-report --port=1717 -q",
-    "t": "run-p --race watchtest servecov",
+    "test": "jest",
+    "t": "jest --watchAll",
     "build": "babel src -d dist --ignore '**/*.test.js'",
     "postbuild": "run-p copymeta copyflow",
     "copymeta": "cp package.json LICENSE README.* dist",
     "copyflow": "flow-copy-source src dist --ignore '**/*.test.js'",
     "prefix": "prettier --single-quote --trailing-comma all --write {src,test}/**/*.js",
-    "fix": "eslint src test --fix",
-    "doc": "documentation readme src/index.js --section=API"
+    "fix": "eslint src test --fix"
   },
-  "dependencies": {},
+  "dependencies": {
+    "yargs": "^8.0.1"
+  },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
@@ -45,12 +46,12 @@
     "babel-preset-flow": "^6.23.0",
     "babel-preset-stage-2": "^6.24.1",
     "copyfiles": "^1.2.0",
-    "documentation": "^4.0.0-rc.1",
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-flowtype": "^2.33.0",
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-prettier": "^2.1.1",
+    "execa": "^0.7.0",
     "flow-bin": "^0.47.0",
     "flow-copy-source": "^1.1.0",
     "flow-typed": "^2.1.2",

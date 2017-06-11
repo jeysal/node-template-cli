@@ -1,4 +1,3 @@
 {
-  "coverageDirectory": "coverage",
   "testEnvironment": "node"
 }
