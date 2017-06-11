@@ -10,7 +10,7 @@
     "cli"
   ],
   "bin": {
-    "node-template-cli": "src/cli.js"
+    "node-template-cli": "cli.js"
   },
   "author": {
     "name": "Tim Seckinger",
