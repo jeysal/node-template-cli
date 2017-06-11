@@ -6,7 +6,8 @@
   "keywords": [
     "node",
     "npm",
-    "template"
+    "template",
+    "cli"
   ],
   "bin": {
     "node-template-cli": "src/cli.js"
