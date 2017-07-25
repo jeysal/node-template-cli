@@ -1,5 +1,7 @@
 # node-template-cli
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jeysal/node-template-cli.svg)](https://greenkeeper.io/)
+
 > Template for a node CLI module
 > [babel](https://babeljs.io/),
 > [eslint](http://eslint.org/),
