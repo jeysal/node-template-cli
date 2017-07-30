@@ -7,8 +7,8 @@
 > [jest](https://facebook.github.io/jest/) and
 > [prettier](https://github.com/prettier/prettier)
 
-[![build status](https://img.shields.io/travis/jeysal/node-template-cli.svg?style=flat-square)](https://travis-ci.org/jeysal/node-template-cli)
-[![AppVeyor build status](https://img.shields.io/appveyor/ci/jeysal/node-template-cli.svg?style=flat-square&label=windows+build)](https://ci.appveyor.com/project/jeysal/node-template-cli)
+[![build status](https://img.shields.io/travis/jeysal/node-template-cli/master.svg?style=flat-square)](https://travis-ci.org/jeysal/node-template-cli)
+[![AppVeyor build status](https://img.shields.io/appveyor/ci/jeysal/node-template-cli/master.svg?style=flat-square&label=windows+build)](https://ci.appveyor.com/project/jeysal/node-template-cli)
 
 [![npm package](https://img.shields.io/npm/v/node-template-cli.svg?style=flat-square)](https://www.npmjs.com/package/node-template-cli)
 [![license](https://img.shields.io/github/license/jeysal/node-template-cli.svg?style=flat-square)](https://github.com/jeysal/node-template-cli/blob/master/LICENSE)
