@@ -13,6 +13,9 @@
 [![npm package](https://img.shields.io/npm/v/node-template-cli.svg?style=flat-square)](https://www.npmjs.com/package/node-template-cli)
 [![license](https://img.shields.io/github/license/jeysal/node-template-cli.svg?style=flat-square)](https://github.com/jeysal/node-template-cli/blob/master/LICENSE)
 
+**UNMAINTAINED!**  
+[node-template](https://github.com/jeysal/node-template) is easy to adapt to CLI packages.
+
 ## Installation
 
     npm install -g node-template-cli
